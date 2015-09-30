@@ -23,7 +23,7 @@ fail_if_empty () {
 
 
 _check_brew_package_installed () {
-    brew list --versions "$1" | fail_if_empty > /dev/null
+    brew list --versions $(basename "$1") | fail_if_empty > /dev/null
 }
 
 
