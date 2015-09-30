@@ -44,12 +44,20 @@ _update_brew() {
 
 brew_me_some () {
     pkg="$1"
-
     _check_brew_package_installed "$pkg" || \
         (_update_brew && brew install "$pkg") || \
         die "$pkg could not be installed"
 
     echo "$pkg installed"
+}
+
+
+cask_me_some () {
+    pkg="$1"
+    brew cask info "$@" | grep "Not installed" > /dev/null || \
+        brew cask install "$@" || \
+        die "cask $pkg could not be installed"
+    echo "$@ is already installed."
 }
 
 
@@ -105,7 +113,6 @@ main () {
     brew_me_some jq
     # brew_me_some leiningen
     brew_me_some libevent
-    brew_me_some macvim
     # brew_me_some homebrew/versions/mongodb24
     brew_me_some moreutils
     # brew_me_some mysql
@@ -128,39 +135,35 @@ main () {
     brew_me_some wget
     brew_me_some zeromq
 
+    # brew_me_some macvim  # TODO: requires a full Xcode
     # brew_me_some elasticsearch  # TODO: requires Java
 
-    # Casks
+    echo ""
+    echo "#######################################################"
+    echo "# CASKS"
+    echo "#######################################################"
     brew_me_some caskroom/cask/brew-cask
 
-    function installcask() {
-        if brew cask info "$@" | grep "Not installed" > /dev/null; then
-            brew cask install "$@"
-        else
-            echo "$@ is already installed."
-        fi
-    }
-
-    installcask alfred
-    installcask arq
-    installcask daisydisk
-    installcask dropbox
-    installcask firefox
-    installcask fluid
-    installcask flux
-    installcask heroku-toolbelt
-    installcask iterm2
-    installcask licecap
-    installcask mailplane
-    installcask mongohub
-    installcask nvalt
-    installcask postgres
-    installcask postico
-    installcask screenhero
-    installcask skype
-    installcask vlc
-    # installcask wireshark
-    # installcask zooom
+    cask_me_some alfred
+    cask_me_some arq
+    cask_me_some daisydisk
+    cask_me_some dropbox
+    cask_me_some firefox
+    cask_me_some fluid
+    cask_me_some flux
+    cask_me_some heroku-toolbelt
+    cask_me_some iterm2
+    cask_me_some licecap
+    cask_me_some mailplane
+    cask_me_some mongohub
+    cask_me_some nvalt
+    cask_me_some postgres
+    cask_me_some postico
+    cask_me_some screenhero
+    cask_me_some skype
+    cask_me_some vlc
+    # cask_me_some wireshark
+    # cask_me_some zooom  # zooom seems broken
 }
 
 main
