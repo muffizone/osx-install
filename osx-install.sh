@@ -87,6 +87,7 @@ main () {
     brew tap homebrew/versions
     brew tap homebrew/science
     # brew tap caskroom/fonts
+    brew tap caskroom/versions
 
     echo ""
     echo "#######################################################"
@@ -152,6 +153,8 @@ main () {
     cask_me_some firefox
     cask_me_some fluid
     cask_me_some flux
+    cask_me_some google-chrome
+    cask_me_some google-chrome-canary
     cask_me_some heroku-toolbelt
     cask_me_some iterm2
     cask_me_some licecap
