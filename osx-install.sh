@@ -144,6 +144,7 @@ main () {
     echo "#######################################################"
     brew_me_some caskroom/cask/brew-cask
 
+    cask_me_some 1password
     cask_me_some alfred
     cask_me_some arq
     cask_me_some daisydisk
