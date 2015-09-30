@@ -54,7 +54,7 @@ brew_me_some () {
 
 cask_me_some () {
     pkg="$1"
-    brew cask info "$@" | grep "Not installed" > /dev/null || \
+    brew cask list | grep -qxF "$pkg" || \
         brew cask install "$@" || \
         die "cask $pkg could not be installed"
     echo "$@ is already installed."
