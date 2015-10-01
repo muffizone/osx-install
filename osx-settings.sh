@@ -3,6 +3,9 @@ set -e
 
 # Dock
 defaults write com.apple.dock orientation -string "left"
+defaults write com.apple.dock autohide -boolean yes
+defaults write com.apple.dock magnification -boolean yes
+defaults write com.apple.dock largesize 65  # magnification factor
 
 # Show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
