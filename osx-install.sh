@@ -165,6 +165,7 @@ main () {
     cask_me_some postico
     cask_me_some screenhero
     cask_me_some skype
+    cask_me_some spotify
     cask_me_some vlc
     # cask_me_some wireshark
     # cask_me_some zooom  # zooom seems broken
