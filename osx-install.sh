@@ -72,7 +72,7 @@ check_brew_is_installed () {
 }
 
 
-main () {
+install_tools () {
     check_brew_is_installed
 
     # Used by brew
@@ -86,7 +86,6 @@ main () {
     echo "#######################################################"
     brew tap homebrew/versions
     brew tap homebrew/science
-    # brew tap caskroom/fonts
     brew tap caskroom/versions
 
     echo ""
@@ -138,7 +137,10 @@ main () {
 
     # brew_me_some macvim  # TODO: requires a full Xcode
     # brew_me_some elasticsearch  # TODO: requires Java
+}
 
+
+install_casks () {
     echo ""
     echo "#######################################################"
     echo "# CASKS"
@@ -170,6 +172,30 @@ main () {
     cask_me_some vlc
     # cask_me_some wireshark
     # cask_me_some zooom  # zooom seems broken
+}
+
+
+install_fonts () {
+    echo ""
+    echo "#######################################################"
+    echo "# FONTS"
+    echo "#######################################################"
+
+    brew tap caskroom/fonts
+
+    # The fonts
+    cask_me_some font-anonymous-pro
+    cask_me_some font-hack
+    cask_me_some font-pt-mono
+    cask_me_some font-source-code-pro-for-powerline
+    cask_me_some font-ubuntu-mono-powerline
+}
+
+
+main () {
+    install_tools
+    install_casks
+    install_fonts
 }
 
 main
