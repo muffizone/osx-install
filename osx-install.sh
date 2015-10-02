@@ -135,7 +135,7 @@ install_tools () {
     brew_me_some wget
     brew_me_some zeromq
 
-    # brew_me_some macvim  # TODO: requires a full Xcode
+    brew_me_some macvim  # NOTE: requires a full Xcode
     # brew_me_some elasticsearch  # TODO: requires Java
 }
 
@@ -149,8 +149,10 @@ install_casks () {
 
     cask_me_some 1password
     cask_me_some alfred
+    cask_me_some appzapper
     cask_me_some arq
     cask_me_some daisydisk
+    cask_me_some dash
     cask_me_some divvy
     cask_me_some dropbox
     cask_me_some firefox
@@ -162,15 +164,22 @@ install_casks () {
     cask_me_some iterm2
     cask_me_some karabiner
     cask_me_some licecap
+    cask_me_some mailbox
     cask_me_some mailplane
+    cask_me_some marked
     cask_me_some mongohub
     cask_me_some nvalt
     cask_me_some postgres
     cask_me_some postico
+    cask_me_some rescuetime
+    cask_me_some robomongo
+    cask_me_some screenflow
     cask_me_some screenhero
+    cask_me_some sketch
     cask_me_some skype
     cask_me_some slack
     cask_me_some spotify
+    cask_me_some superduper
     cask_me_some textexpander
     cask_me_some vlc
     # cask_me_some wireshark
