@@ -151,6 +151,7 @@ install_casks () {
     cask_me_some alfred
     cask_me_some arq
     cask_me_some daisydisk
+    cask_me_some divvy
     cask_me_some dropbox
     cask_me_some firefox
     cask_me_some fluid
@@ -168,7 +169,9 @@ install_casks () {
     cask_me_some postico
     cask_me_some screenhero
     cask_me_some skype
+    cask_me_some slack
     cask_me_some spotify
+    cask_me_some textexpander
     cask_me_some vlc
     # cask_me_some wireshark
     # cask_me_some zooom  # zooom seems broken
