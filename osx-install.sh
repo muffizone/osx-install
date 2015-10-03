@@ -153,7 +153,7 @@ install_casks () {
     cask_me_some appzapper
     cask_me_some arq
     cask_me_some daisydisk
-    cask_me_some dash
+    # cask_me_some dash  # NOTE: purchased via App Store
     cask_me_some divvy
     cask_me_some dropbox
     cask_me_some firefox
