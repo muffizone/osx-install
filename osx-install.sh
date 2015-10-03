@@ -148,6 +148,7 @@ install_casks () {
     brew_me_some caskroom/cask/brew-cask
 
     cask_me_some 1password
+    cask_me_some adobe-photoshop-lightroom
     cask_me_some alfred
     cask_me_some appzapper
     cask_me_some arq
@@ -182,6 +183,7 @@ install_casks () {
     cask_me_some superduper
     cask_me_some textexpander
     cask_me_some vlc
+
     # cask_me_some wireshark
     # cask_me_some zooom  # zooom seems broken
 }
