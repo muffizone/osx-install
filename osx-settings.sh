@@ -2,7 +2,10 @@
 set -e
 
 # Finder
+defaults write com.apple.finder AppleShowAllExtensions -boolean yes
 defaults write com.apple.finder AppleShowAllFiles -boolean yes
+defaults write com.apple.finder PathBarRootAtHome -bool yes
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool yes
 
 # Dock
 defaults write com.apple.dock orientation -string "left"
