@@ -97,6 +97,7 @@ install_tools () {
     brew_me_some fish
 
     brew_me_some bup
+    brew_me_some colordiff
     brew_me_some cowsay
     brew_me_some ctags
     brew_me_some direnv
@@ -200,7 +201,9 @@ install_fonts () {
     # The fonts
     cask_me_some font-anonymous-pro
     cask_me_some font-hack
+    cask_me_some font-inconsolata
     cask_me_some font-pt-mono
+    cask_me_some font-roboto
     cask_me_some font-source-code-pro-for-powerline
     cask_me_some font-ubuntu-mono-powerline
 }
