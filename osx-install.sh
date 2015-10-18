@@ -177,7 +177,7 @@ install_casks () {
     cask_me_some robomongo
     cask_me_some screenflow
     cask_me_some screenhero
-    cask_me_some sketch
+    # cask_me_some sketch   # NOTE: purchased via App Store
     cask_me_some skype
     cask_me_some slack
     cask_me_some spotify
