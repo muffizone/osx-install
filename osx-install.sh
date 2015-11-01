@@ -149,7 +149,7 @@ install_casks () {
     echo "#######################################################"
     brew_me_some caskroom/cask/brew-cask
 
-    cask_me_some 1password
+    # cask_me_some 1password  # NOTE: purchased via App Store
     cask_me_some adobe-photoshop-lightroom
     cask_me_some alfred
     cask_me_some appzapper
