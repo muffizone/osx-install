@@ -161,7 +161,7 @@ install_casks () {
     cask_me_some firefox
     cask_me_some fluid
     cask_me_some flux
-    cask_me_some google-chrome
+    # cask_me_some google-chrome  # NOTE: installed into /Applications manually, to overcome 1Password's sandboxed nature
     cask_me_some google-chrome-canary
     cask_me_some heroku-toolbelt
     cask_me_some iterm2
