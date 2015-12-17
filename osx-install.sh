@@ -166,7 +166,6 @@ install_casks () {
     cask_me_some heroku-toolbelt
     cask_me_some iterm2
     cask_me_some karabiner
-    cask_me_some laullon-gitx
     cask_me_some licecap
     cask_me_some mailbox
     cask_me_some mailplane
@@ -177,6 +176,7 @@ install_casks () {
     cask_me_some postico
     cask_me_some rescuetime
     cask_me_some robomongo
+    cask_me_some rowanj-gitx
     cask_me_some screenflow
     cask_me_some screenhero
     # cask_me_some sketch   # NOTE: purchased via App Store
