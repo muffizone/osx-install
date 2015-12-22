@@ -154,6 +154,7 @@ install_casks () {
     cask_me_some alfred
     cask_me_some appzapper
     cask_me_some arq
+    cask_me_some calibre
     cask_me_some daisydisk
     # cask_me_some dash  # NOTE: purchased via App Store
     cask_me_some divvy
