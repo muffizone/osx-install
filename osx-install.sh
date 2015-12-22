@@ -162,6 +162,7 @@ install_casks () {
     cask_me_some fluid
     cask_me_some flux
     # cask_me_some google-chrome  # NOTE: installed into /Applications manually, to overcome 1Password's sandboxed nature
+    cask_me_some gitx
     cask_me_some google-chrome-canary
     cask_me_some heroku-toolbelt
     cask_me_some iterm2
@@ -176,7 +177,6 @@ install_casks () {
     cask_me_some postico
     cask_me_some rescuetime
     cask_me_some robomongo
-    cask_me_some rowanj-gitx
     cask_me_some screenflow
     cask_me_some screenhero
     # cask_me_some sketch   # NOTE: purchased via App Store
