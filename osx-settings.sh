@@ -16,6 +16,7 @@ defaults write com.apple.dock largesize 65  # magnification factor
 # Make dock appear faster
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.5
+defaults write com.apple.dock expose-animation-duration -float 0.15
 
 # Show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
