@@ -13,6 +13,10 @@ defaults write com.apple.dock autohide -boolean yes
 defaults write com.apple.dock magnification -boolean yes
 defaults write com.apple.dock largesize 65  # magnification factor
 
+# Make dock appear faster
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0.5
+
 # Show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
