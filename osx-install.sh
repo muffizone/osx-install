@@ -167,7 +167,7 @@ install_casks () {
     cask_me_some google-chrome-canary
     cask_me_some heroku-toolbelt
     cask_me_some iterm2
-    cask_me_some karabiner
+    cask_me_some karabiner-elements
     cask_me_some licecap
     cask_me_some mailbox
     cask_me_some mailplane
